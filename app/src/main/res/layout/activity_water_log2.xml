@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".WaterLogActivity2">
+    tools:context="com.example.waterrootapp2.WaterLogActivity2">
 
 
     <TextView

@@ -1,22 +1,10 @@
-package com.example.waterrootapp;
+package com.example.waterrootapp2;
 
-import android.app.Activity;
-import android.app.Notification;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.IBinder;
-import android.os.Looper;
-import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.support.annotation.Nullable;
-import android.os.Bundle;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,17 +12,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.nio.channels.Channel;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Timer;
-import java.util.TimerTask;
 
 import static android.support.constraint.Constraints.TAG;
-import static com.example.waterrootapp.MainActivity.CHANNEL_ID;
-import static com.example.waterrootapp.MainActivity.time;
-import static com.example.waterrootapp.MainActivity.wateredTodayEditor;
-import static com.example.waterrootapp.MainActivity.wateredTodayPref;
+import static com.example.waterrootapp2.MainActivity.wateredTodayEditor;
+import static com.example.waterrootapp2.MainActivity.wateredTodayPref;
 
 /**
  * @author: Nilay McLaren

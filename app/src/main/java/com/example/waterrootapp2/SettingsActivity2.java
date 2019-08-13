@@ -1,42 +1,33 @@
 
-package com.example.waterrootapp;
+package com.example.waterrootapp2;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.sql.Time;
-import java.util.ArrayList;
-import java.util.Timer;
+import com.example.waterrootapp2.R;
 
-import static android.provider.Contacts.SettingsColumns.KEY;
 import static android.support.constraint.Constraints.TAG;
-import static com.example.waterrootapp.MainActivity.time;
-import static com.example.waterrootapp.SplashScreenActivity.firstTime;
-import static com.example.waterrootapp.SplashScreenActivity.sharedPreferences;
-import static com.example.waterrootapp.SplashScreenActivity.switchon;
-import static com.example.waterrootapp.TimerService.userTimer;
-import static com.example.waterrootapp.TimerService.userduration;
-import static com.example.waterrootapp.TimerService.userhour;
-import static com.example.waterrootapp.TimerService.userminute;
-import static com.example.waterrootapp.TimerService.usermonth;
-import static com.example.waterrootapp.TimerService.userday;
-import static com.example.waterrootapp.TimerService.useryear;
+import static com.example.waterrootapp2.SplashScreenActivity.sharedPreferences;
+import static com.example.waterrootapp2.SplashScreenActivity.switchon;
+import static com.example.waterrootapp2.TimerService.userTimer;
+import static com.example.waterrootapp2.TimerService.userduration;
+import static com.example.waterrootapp2.TimerService.userhour;
+import static com.example.waterrootapp2.TimerService.userminute;
+import static com.example.waterrootapp2.TimerService.usermonth;
+import static com.example.waterrootapp2.TimerService.userday;
+import static com.example.waterrootapp2.TimerService.useryear;
 
 /**@author: Nilay McLaren
  * @date: 5/15/19

@@ -1,4 +1,4 @@
-package com.example.waterrootapp;
+package com.example.waterrootapp2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,11 +6,10 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Switch;
 
-import static android.support.constraint.Constraints.TAG;
+import com.example.waterrootapp2.R;
+
 /**@author: Nilay McLaren
  * @date: 5/15/19
  * @description: A page that appears the first time the app is opened on a mobile device and informs

@@ -1,10 +1,13 @@
-package com.example.waterrootapp;
+package com.example.waterrootapp2;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.waterrootapp2.R;
+
 /**@author: Daniel Abadjiev
  * @date: 5/15/19
  * @description: This is an activity that displays two buttons which link to resources on plant information.

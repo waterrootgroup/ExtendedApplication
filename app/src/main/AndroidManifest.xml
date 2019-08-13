@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.waterrootapp">
+    package="com.example.waterrootapp2">
 
     <application
         android:allowBackup="true"
@@ -9,31 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlantInfo"></activity>
+        <activity android:name="com.example.waterrootapp2.PlantInfo"></activity>
         <activity
-            android:name=".Instructions"
+            android:name="com.example.waterrootapp2.Instructions"
             android:exported="true"
             android:label="@string/title_activity_instructions"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MoistureActivity" />
+        <activity android:name="com.example.waterrootapp2.MoistureActivity" />
         <activity
-            android:name=".WaterLogActivity2"
+            android:name="com.example.waterrootapp2.WaterLogActivity2"
             android:exported="true"
             android:label="@string/title_activity_water_log2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SettingsActivity2" />
-        <activity android:name=".AdditionalFeatures" />
+        <activity android:name="com.example.waterrootapp2.SettingsActivity2" />
+        <activity android:name="com.example.waterrootapp2.AdditionalFeatures" />
 
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name="com.example.waterrootapp2.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.example.waterrootapp2.MainActivity" />
 
-        <service android:name=".TimerService" />
+        <service android:name="com.example.waterrootapp2.TimerService" />
     </application>
 
 </manifest>

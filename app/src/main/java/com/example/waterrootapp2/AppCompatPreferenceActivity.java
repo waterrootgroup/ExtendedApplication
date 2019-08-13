@@ -1,4 +1,4 @@
-package com.example.waterrootapp;
+package com.example.waterrootapp2;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".WaterLogActivity2"
+    tools:context="com.example.waterrootapp2.WaterLogActivity2"
     tools:showIn="@layout/activity_water_log2">
 
     <LinearLayout
