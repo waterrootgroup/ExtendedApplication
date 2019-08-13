@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "150749991443",
+    "firebase_url": "https://waterrootapp.firebaseio.com",
+    "project_id": "waterrootapp",
+    "storage_bucket": "waterrootapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150749991443:android:530c9347f0f057f3",
+        "android_client_info": {
+          "package_name": "com.example.waterrootapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150749991443-846vcdo4f3jt18n7e7v0iif8dcrkmaeq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterrootapp",
+            "certificate_hash": "df10ee04700d2bb583c66f932e62a5a648fdd372"
+          }
+        },
+        {
+          "client_id": "150749991443-7rij8aj7am4h7han70tpe9t9s8a8mogu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNrJpFMRnVEsDf2xDUDUkBYAvuaARDoL0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150749991443-7rij8aj7am4h7han70tpe9t9s8a8mogu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

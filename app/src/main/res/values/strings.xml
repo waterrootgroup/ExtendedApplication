@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">WaterRootApp</string>
+    <string name="nextWater">Time till next water:</string>
+    <string name="additionalFeatures">Additional Features</string>
+    <string name="settingsButton">Settings</string>
+    <string name="title_activity_settings_page">SettingsPage</string>
+    <string name="setting">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="switch_timer_description">Turn the timer on or off</string>
+    <string name="timer_set">Set Timer</string>
+    <string name="set_timer_summary">Set timer in hr/min/dd/mm/yy</string>
+    <string name="example_time">11:50</string>
+
+    <string name="set_timer">Set the timer for next water</string>
+    <string name="set_timer_switch">hr/min/dd/mm/yy</string>
+    <string name="timer_switch_description">Turn timer on or off</string>
+    <string name="timer_title">Timer</string>
+    <string name="timer">Timer</string>
+    <string name="timer_description">hr/min/dd/mm/yyyy</string>
+    <string name="clear_log">Clear log</string>
+    <string name="clear_log_summary">Enter the date and time in hr/min/dd/mm/yyyy format. All logs before this will be deleted.</string>
+    <string name="auto_log">Automatically add information to the water log whenever a plant is watered</string>
+    <string name="auto_log_switch">Automatic logging</string>
+    <string name="water_message">Plant has just been watered!</string>
+    <string name="instructions_summary">Show instructions set up when app is starting</string>
+    <string name="instructions_switch">Instructions</string>
+    <string name="header_content">How to Set Up your WaterRoot</string>
+    <string name="additional_features">Additional Features</string>
+    <string name="feature_one_content">Water Log: View watering history including date, time and amount of water given to plant.</string>
+    <string name="feature_two_content">Plant Information: These are some websites that we like for looking up plant information.</string>
+    <string name="exit_button_content">Exit</string>
+    <string name="title_activity_water_log">WaterLogActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="return_to_home">Return To Home</string>
+    <string name="onplant">Run the hose to the plant, and then fasten the device above the potted plant at desired height. Double check that the water will not reach outside of the pot.
+</string>
+    <string name="wifi">Connect device to wifi and link the app to the device
+</string>
+    <string name="pump">Fill a water reservoir and then submerge the pump in the water.
+</string>
+    <string name="return_button_waterlog">Back</string>
+    <string name="waterlog_header">WaterLog</string>
+    <string name="timerswitchinmain">Timer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_of_water">Time of water</string>
+    <string name="date_of_water">Date of water</string>
+    <string name="timer_on_off">Turn timer on or off</string>
+    <string name="instructions_switch_on_off">Show instructions screen on startup</string>
+    <string name="duration_switch_on_off">Duration of automatic watering</string>
+    <string name="settings_header_content">Settings</string>
+    <string name="title_activity_water_log2">WaterLogActivity2</string>
+    <string name="large_text">
+        "Example Text.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample Text."
+    </string>
+    <string name="time_edit_hint">hr:min (exclude leading zeroes)</string>
+    <string name="date_text_hint">month/day/year (use 2019 not 19)</string>
+    <string name="duration_hint">Number of seconds (nearest whole number)</string>
+    <string name="savebuttontext">Save Changes</string>
+    <string name="title_activity_moisture">MoistureActivity</string>
+    <string name="moisture_header">Plant Moisture</string>
+    <string name="feature_three_instructions">Moisture Log: View the current moisture and the moisture from everytime you watered the plant.</string>
+    <string name="instructionsText">Instructions: Here are instructions for how to set up the device.</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="instructions">Instructions</string>
+    <string name="video_instructions">video instructions</string>
+    <string name="instructions_document">Instructions Document</string>
+    <string name="refresh">Refresh</string>
+    <string name="plant_information">Plant Information</string>
+    <string name="spruce">The Spruce is a website with a lot of great gardening tips and information.</string>
+    <string name="google">Google is also a useful resourse for looking up information.</string>
+    <string name="website_description">Here are some websites that have useful gardening information</string>
+    <string name="return_to_additional_features">RETURN TO ADDITIONAL FEATURES</string>
+    <string name="water_now_description">This buttons activates the device</string>
+
+</resources>

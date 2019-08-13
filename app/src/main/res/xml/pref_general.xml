@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="example_switch"
+        android:summary="@string/switch_timer_description"
+        android:title="@string/timer"
+        android:id="@+id/timer"/>
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="set_timer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/timer_description"
+        android:title="@string/set_timer"
+        android:id="@+id/setTimer"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="auto_log"
+        android:summary="@string/auto_log"
+        android:title="@string/auto_log_switch"
+        android:id="@+id/automaticlogging"
+        />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="clear_log"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/clear_log_summary"
+        android:title="@string/clear_log" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/instructions_switch"
+        android:summary="@string/instructions_summary"
+        android:title="@string/instructions_switch"
+        android:id="@+id/instructions_switch"/>
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="water_duration"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Duration of automatic watering"
+        android:id="@+id/waterDuration"/>
+
+</PreferenceScreen>
