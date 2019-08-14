@@ -67,7 +67,7 @@ public class WaterLogActivity2 extends AppCompatActivity {
      */
     public void printWaterLog(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference waterLog = database.getReference("waterLog");
+        final DatabaseReference waterLog = database.getReference(MainActivity.deviceName+"waterLog");
 //        output.setText(waterLog.toString());
 
         ValueEventListener postListener = new ValueEventListener() {

@@ -46,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
      * This is a SharedPreferences object that facilitates sharing data across all activiteies
      */
     public static SharedPreferences wateredTodayPref;
+    /**
+     * This is the constant that stores which device is used.
+     */
+    public static final String deviceName="App1Root/";
 
     /**
      * Creates an instance of the MainActivity
@@ -185,7 +189,8 @@ public class MainActivity extends AppCompatActivity {
         ImageButton water=findViewById(R.id.imageButton);
         water.setImageDrawable(getResources().getDrawable(R.drawable.clickwaternow2));
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference commands = database.getReference("commands");
+
+        DatabaseReference commands = database.getReference(deviceName+"commands");
         commands.child("pumpOn").setValue(1);
         waterToday();
     }
@@ -200,9 +205,9 @@ public class MainActivity extends AppCompatActivity {
         ImageButton water=findViewById(R.id.imageButton);
         water.setImageDrawable(getResources().getDrawable(R.drawable.water_now3));
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference commands = database.getReference("commands");
+        DatabaseReference commands = database.getReference(deviceName+"commands");
         commands.child("pumpOn").setValue(0);
-        DatabaseReference log = database.getReference("waterLog");
+        DatabaseReference log = database.getReference(deviceName+"waterLog");
         String time = TimerService.getCurrentTime();
         log.child(time).child("watered").setValue(true);
         log.child(time).child("moisture").setValue(0);

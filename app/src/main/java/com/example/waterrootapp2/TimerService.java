@@ -107,7 +107,7 @@ public class TimerService extends Service {
         if (current.equals(userTimer)) {
             Log.d(TAG, "strings are equal");
             FirebaseDatabase database2 = FirebaseDatabase.getInstance();
-            DatabaseReference commands2 = database2.getReference("commands");
+            DatabaseReference commands2 = database2.getReference(MainActivity.deviceName+"commands");
             sendIntent();
             commands2.child("pumpOn").setValue(1);
             try {
@@ -116,7 +116,7 @@ public class TimerService extends Service {
                 e.printStackTrace();
             }
             commands2.child("pumpOn").setValue(0);
-            DatabaseReference log = database2.getReference("waterLog");
+            DatabaseReference log = database2.getReference(MainActivity.deviceName+"waterLog");
             SimpleDateFormat mdformat = new SimpleDateFormat("HH:mm:ss");
             String time = getCurrentTime();
             log.child(time).child("watered").setValue(true);
@@ -215,7 +215,7 @@ public class TimerService extends Service {
      */
     public static void addRecentMoistureListener() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference moistureRec = database.getReference("moistureLog").child("recentMoisture");
+        final DatabaseReference moistureRec = database.getReference(MainActivity.deviceName+"moistureLog").child("recentMoisture");
 //        final String timeString="Time: "+currentTime;
         ValueEventListener postListener = new ValueEventListener() {
             @Override

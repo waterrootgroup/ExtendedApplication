@@ -59,7 +59,7 @@ public class MoistureActivity extends AppCompatActivity {
      */
     public void onRefresh(View v){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        database.getReference().child("commands").child("moistureOn").setValue(1);
+        database.getReference().child(MainActivity.deviceName+"commands").child("moistureOn").setValue(1);
         printMoistureLog(textOutput);
     }
 
@@ -69,7 +69,7 @@ public class MoistureActivity extends AppCompatActivity {
      */
     public static void printMoistureLog(TextView output){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference moistureLog = database.getReference("moistureLog");
+        final DatabaseReference moistureLog = database.getReference(MainActivity.deviceName+"moistureLog");
         ValueEventListener postListener = new ValueEventListener() {
             /**
              *  This is the method that is called every time data are changed in this section of the
