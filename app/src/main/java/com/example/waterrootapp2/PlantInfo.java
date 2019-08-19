@@ -34,7 +34,15 @@ public class PlantInfo extends AppCompatActivity {
         Intent startNewActivity = new Intent(PlantInfo.this,AdditionalFeatures.class);
         startActivity(startNewActivity);
     }
+    /**
+     * Takes the user to the Plant Database page from the PlantInfo page
+     * @param v is the View object
+     */
 
+    public void onDatabase (View v){
+        Intent startNewActivity = new Intent(PlantInfo.this,PlantDatabase.class);
+        startActivity(startNewActivity);
+    }
     /**
      * Opens google so the user may search for information on how to care for their plants effectively
      * @param v is the View object

@@ -6,9 +6,14 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.waterrootapp2.R;
+
+import static com.example.waterrootapp2.MainActivity.indexOf;
 
 /**@author: Nilay McLaren
  * @date: 5/15/19
@@ -47,6 +52,19 @@ public class SplashScreenActivity extends AppCompatActivity {
         myPrefs = getSharedPreferences("prefID", Context.MODE_PRIVATE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+        RadioGroup devices=findViewById(R.id.deviceChoices);
+        devices.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                Log.d("radio buttons",checkedId+"");
+                int[] ids={R.id.device1,R.id.device2,R.id.device3};
+                Log.d("radio checking", indexOf(ids,checkedId)+"");
+                MainActivity.changeDevice(indexOf(ids,checkedId),SplashScreenActivity.class);
+            }
+        });
+        RadioButton radio1=findViewById(R.id.device1);
+        radio1.toggle();//Select device1 by default;
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         firstTime = sharedPreferences.getBoolean("firstTime", true);
         if (myPrefs.getBoolean("switchon", true) == true) {

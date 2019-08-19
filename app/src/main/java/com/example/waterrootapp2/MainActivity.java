@@ -25,6 +25,7 @@ import com.example.waterrootapp2.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -47,9 +48,10 @@ public class MainActivity extends AppCompatActivity {
      */
     public static SharedPreferences wateredTodayPref;
     /**
-     * This is the constant that stores which device is used.
+     * This is the "constant" that stores which device is used.
      */
-    public static final String deviceName="App1Root/";
+    public static String deviceName;
+    public static final String[] deviceNames={"App1Root/","App2Root/","App3Root/"};
 
     /**
      * Creates an instance of the MainActivity
@@ -126,8 +128,40 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    public static int indexOf(int[] arr, int o){
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i] == o)
+                return i;
+        }
+        return -1;
+    }
+    public static int indexOf(Object[] arr, Object o){
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i].equals(o))
+                return i;
+        }
+        return -1;
+    }
+    public static boolean changeDevice(int deviceNamey, Class context){
+        Log.d("device name", deviceNamey+"");//Testing pruposes
+        if (context.equals(SplashScreenActivity.class)){
+            //make condition better please
+            if (deviceNamey>=0 && deviceNamey<=2) {
 
+                deviceName = deviceNames[deviceNamey];
 
+                Log.d("device name", deviceName);//Testing pruposes
+                return true;
+            }
+            else
+                return false;
+        }
+        else{
+            Log.d("Calling error","Only Setup Screen can change device name");
+            return false;
+        }
+
+    }
     /**
      * This is the ID for the Channel for the Service
      */
@@ -176,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
      * @param v is the view object
      */
      public void onWater(View v){
+//         Log.d("device name", deviceName);//Testing pruposes
          Calendar calendar = Calendar.getInstance();
          String year = Integer.toString(calendar.get(Calendar.YEAR));
          String month = Integer.toString(calendar.get(Calendar.MONTH));

@@ -9,31 +9,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.waterrootapp2.PlantInfo"></activity>
         <activity
-            android:name="com.example.waterrootapp2.Instructions"
+            android:name=".PlantDatabase"
+            android:label="@string/title_activity_plant_database"
+            android:parentActivityName=".PlantInfo"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.waterrootapp2.PlantInfo" />
+        </activity>
+        <activity android:name=".PlantInfo" />
+        <activity
+            android:name=".Instructions"
             android:exported="true"
             android:label="@string/title_activity_instructions"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.waterrootapp2.MoistureActivity" />
+        <activity android:name=".MoistureActivity" />
         <activity
-            android:name="com.example.waterrootapp2.WaterLogActivity2"
+            android:name=".WaterLogActivity2"
             android:exported="true"
             android:label="@string/title_activity_water_log2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.waterrootapp2.SettingsActivity2" />
-        <activity android:name="com.example.waterrootapp2.AdditionalFeatures" />
-
-        <activity android:name="com.example.waterrootapp2.SplashScreenActivity">
+        <activity android:name=".SettingsActivity2" />
+        <activity android:name=".AdditionalFeatures" />
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.waterrootapp2.MainActivity" />
+        <activity android:name=".MainActivity" />
 
-        <service android:name="com.example.waterrootapp2.TimerService" />
+        <service android:name=".TimerService" />
     </application>
 
 </manifest>

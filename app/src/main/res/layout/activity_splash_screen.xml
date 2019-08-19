@@ -31,11 +31,12 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/exit_button"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:layout_editor_absoluteX="0dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/splashscreen_activity"
@@ -132,6 +133,39 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/step_three"
                 app:layout_constraintTop_toBottomOf="@+id/feature_two_instructions" />
+
+            <RadioGroup
+                android:id="@+id/deviceChoices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/step_three_instructions">
+
+                <RadioButton
+                    android:id="@+id/device1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device 1" />
+
+                <RadioButton
+                    android:id="@+id/device2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device 2" />
+
+                <RadioButton
+                    android:id="@+id/device3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device 3" />
+            </RadioGroup>
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

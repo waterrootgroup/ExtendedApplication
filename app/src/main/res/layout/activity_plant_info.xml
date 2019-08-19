@@ -107,6 +107,27 @@
                     android:textSize="18sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/databaseButton"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:onClick="onDatabase"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/database" />
+
+                <TextView
+                    android:id="@+id/databaseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/databaseText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

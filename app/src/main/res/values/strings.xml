@@ -147,5 +147,14 @@
     <string name="website_description">Here are some websites that have useful gardening information</string>
     <string name="return_to_additional_features">RETURN TO ADDITIONAL FEATURES</string>
     <string name="water_now_description">This buttons activates the device</string>
+    <string name="databaseText">Try out the Water Root Plant Information database (beta version)</string>
+    <string name="title_activity_plant_database">PlantDatabase</string>
+    <string name="return_to_plant_info">Return To Plant Info</string>
+    <string name="plant_database">Plant Database</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="citationWikipedia">Plant information taken from www.wikipedia.org/</string>
+
+    <!--Plant descriptions in plant_text.xml-->
+
 
 </resources>
