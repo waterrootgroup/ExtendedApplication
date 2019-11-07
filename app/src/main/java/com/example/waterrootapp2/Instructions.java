@@ -43,7 +43,7 @@ public class Instructions extends AppCompatActivity {
      * @param v is the View that calls this onClick method.
      */
     public void onYoutube(View v){
-        openWebPage("http://youtube.com/");
+        openWebPage("https://www.youtube.com/watch?v=R0pxt92T13A&t=3s");
     }
     /**
      * This is the onClick that opens up the google docs link for the instructions document.
